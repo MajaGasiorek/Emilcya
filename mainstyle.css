@@ -1,0 +1,125 @@
+
+html{
+  font-family: Pacifico, cursive;
+  background-color:#1f1e1e;
+  color:white;
+}
+
+header {
+  background-color: #111;
+  
+  text-align: center;
+  
+  width: 80%;
+  
+  padding: 20px;
+ 
+  border: 3px dashed #ff66b2;
+  border-radius: 10%;
+  
+  margin-top: 50;
+  margin-bottom: 50;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  color: #ff66b2;
+  margin:0;
+  font-size: 5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+#subtitle {
+  font-size: 18px;
+  color: white;
+  margin:0;
+}
+
+
+main{
+  width: 95%;
+  background-color: #111;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px dashed #883366;
+  border-radius: 10%;
+}
+#image-container {
+  position: relative;
+ text-align: center;
+}
+
+
+#image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#kiss {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 30%;
+}
+#image{
+  max-width:100%;
+  display:block;
+    clip-path: inset(17% 0 28% 0);
+    margin: 0 auto;
+}
+
+#kiss2 {
+  position: absolute;
+  bottom: 50;
+  left: 10;
+  max-width: 30%;
+}
+
+#kiss, #kiss2 {
+  transition: transform 0.3s ease;
+}
+
+#kiss:hover, #kiss2:hover {
+  transform: scale(1.2);
+}
+
+#kiss:active, #kiss2:active {
+  animation: shake 0.5s;
+}
+
+
+#image-caption{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.0rem;
+  
+}
+
+#fb-link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff66b2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
